@@ -1,9 +1,9 @@
 ---
 title: "What is Packet?"
 date: "2025-09-23 23:58:39"
-last_modified_at: "2025-09-23 23:58:39"
+last_modified_at: "2025-09-24 08:42:51"
 categories: ["DEV", "Internet"]
-tags: ["develop", "network", "test"]
+tags: ["develop", "frontend", "network"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Internet/What is Packet?.md"
 ---
@@ -45,15 +45,3 @@ canonical_id: "obsidian:DEV/Internet/What is Packet?.md"
 - **효율성**: 데이터를 작게 나누어 동시에 여러 경로로 보낼 수 있기 때문에, 인터넷 회선의 효율을 극대화할 수 있다. 만약 패킷 단위가 아니라 전체 파일 단위로 보내면, 하나의 파일이 전송을 마칠 때까지 다른 데이터가 기다려야 한다.
 - **신뢰성**: 만약 전송 중에 패킷 하나가 손실되더라도 전체 데이터를 재전송할 필요 없이 손실된 패킷만 다시 보내면 된다.
 - **유연성**: 네트워크 혼잡 상황에서 트래픽을 분산시키기에 용이하다. 예를 들어, 한쪽 경로에 트래픽이 몰리면 라우터가 다른 경로로 패킷을 우회시킬 수 있다.
-
-## Packet Test
-
-Packet Test
-
-## Packet Test 2
-
-Packet Test with multiply article
-
-## Packet Test 7
-
-Packet Test 7
