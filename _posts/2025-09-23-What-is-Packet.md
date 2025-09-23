@@ -1,9 +1,11 @@
 ---
-title: What is Packet?
-date: 2025-09-23 23:20:04
-categories: [DEV, Internet]
-tags: [development, network]
-author: hothyun
+title: "What is Packet?"
+date: "2025-09-23 23:58:39"
+last_modified_at: "2025-09-23 23:58:39"
+categories: ["DEV", "Internet"]
+tags: ["develop", "network", "test"]
+author: "hothyun"
+canonical_id: "obsidian:DEV/Internet/What is Packet?.md"
 ---
 
 가장 간단하게 말해, 패킷은 인터넷에서 데이터를 전송하기 위해 **작게 나눈 데이터 덩어리** 이다.
@@ -47,3 +49,11 @@ author: hothyun
 ## Packet Test
 
 Packet Test
+
+## Packet Test 2
+
+Packet Test with multiply article
+
+## Packet Test 7
+
+Packet Test 7
