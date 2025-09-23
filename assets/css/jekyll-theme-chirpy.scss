@@ -9,3 +9,38 @@
 ';
 
 /* append your custom style below */
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]),
+  html[data-mode='dark'] {
+    --link-color: #ffd586;
+    --link-underline-color: #ffd586;
+    --toc-highlight: #ffd586;
+    --link-hover-color: #efc982;
+    --tag-hover: #242427;
+  }
+  html[data-mode='light'] {
+    --link-color: #476eae;
+    --link-underline-color: #476eae;
+    --toc-highlight: #476eae;
+    --link-hover-color: #3e64a3;
+  }
+}
+
+#page-category a:hover,
+#page-tag a:hover,
+#access-lastmod a:hover,
+.post-tail-wrapper .license-wrapper > a:hover,
+#search-results a:hover,
+footer a:hover,
+#topbar #breadcrumb a:hover,
+.post-meta a:not([class]):hover,
+.content a:not(.img-link):hover {
+  color: var(--link-hover-color) !important;
+  border-bottom: 1px solid var(--link-hover-color);
+  text-decoration: none;
+}
+
+.tag {
+  border: 1px solid var(--btn-border-color) !important;
+}
