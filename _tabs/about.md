@@ -4,5 +4,13 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> 저의 portfolio 및 소개는 [Portfolio Site](https://hothyun-portfolio.vercel.app) 에 있습니다.
 {: .prompt-tip }
+
+# 안녕하세요! HotHyun의 Blog에 오신 것을 환영합니다!
+
+안녕하세요! Software Enginner HotHyun 입니다. 
+
+저는 초기 스타트업에서 제품을 만들기 위해 개발을 하게 되었습니다. 스타트업 씬에서 제품을 빠르게 만들어내기 위해 이론을 공부하기 보다는 코드를 짜고 에러와 부딪히면서 개발을 위해 필요한 지식만을 습득하게 되었습니다. 돌아보니, 이 지식이 개발을 하는 데에 도움이 되는 것은 맞지만, 조금 더 개발을 잘하기 위해서는 놓쳤던 부분들을 공부하고 복습하는 게 중요하다고 느꼈습니다. Framework와 Programming Language를 잘 쓰는 것 뿐만 아니라 각 개발 분야에서 필요한 CS 지식과 생태계를 공부하고 이해하는 것이 지금의 저에게 필요한 것이라 판단했습니다.
+
+지금 이 블로그는 위에서 말한 공부를 정리하여 포스팅하는 공부 일지입니다. 개발을 시작한 지 얼마 안된 초보 개발자라 굉장히 많이 부족하고 모르는 게 정말 많습니다. 그래서 제 공부의 방향성을 잡아줄 것이 필요했습니다. 저는 [Developer Roadmaps](https://roadmap.sh/roadmaps) 를 참고하여 FrontEnd & BackEnd 공부를 진행하고 공부한 내용을 정리하여 포스팅하려 합니다. 일상이나 개발 중인 프로젝트 관련한 기술 지식도 포스팅하려는데 포스트에 잘못 설명된 부분이나 개선점들이 있다면 지적해주시면 감사하겠습니다 ☺️ 같은 개발 분야나 취미가 있으신 분들 편하게 들어오셔서 포스트 읽으시고 댓글은 언제나 환영입니다! 제 글을 읽어주시는 분들께 항상 감사드립니다!
