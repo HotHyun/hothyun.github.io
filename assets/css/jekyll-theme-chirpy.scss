@@ -43,6 +43,19 @@
 
 @media (prefers-color-scheme: light) {
   html:not([data-mode]),
+  html[data-mode='light'] {
+    --link-color: #476eae;
+    --link-underline-color: #476eae;
+    --toc-highlight: #476eae;
+    --link-hover-color: #3e64a3;
+    .btn.btn-outline-primary:not(.disabled):hover {
+      border-color: #476eae !important;
+    }
+    .btn:hover {
+      background-color: #476eae;
+      color: #fff;
+    }
+  }
   html[data-mode='dark'] {
     --link-color: #ffd586;
     --link-underline-color: #ffd586;
@@ -55,19 +68,6 @@
     .btn:hover {
       background-color: #efc982;
       color: #242427;
-    }
-  }
-  html[data-mode='light'] {
-    --link-color: #476eae;
-    --link-underline-color: #476eae;
-    --toc-highlight: #476eae;
-    --link-hover-color: #3e64a3;
-    .btn.btn-outline-primary:not(.disabled):hover {
-      border-color: #476eae !important;
-    }
-    .btn:hover {
-      background-color: #476eae;
-      color: #fff;
     }
   }
 }
