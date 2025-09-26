@@ -1,7 +1,7 @@
 ---
 title: "What are HTTP & HTTPS"
 date: "2025-09-26 12:59:08"
-last_modified_at: "2025-09-26 13:04:12"
+last_modified_at: "2025-09-26 22:34:09"
 categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
 author: "hothyun"
@@ -12,15 +12,18 @@ canonical_id: "obsidian:DEV/Internet/What are HTTP & HTTPS.md"
 
 HTTP는 Hypertext Transfer Protocol의 약자로, 웹에서 데이터를 주고받는 데 사용되는 가장 기본적인 애플리케이션 계층 프로토콜이다.
 간단히 말해, HTTP는 웹 브라우저와 웹 서버가 서로 대화하는 규칙이다. 우리가 웹사이트에 접속하거나, 동영상을 보거나, 사진을 다운로드 하는 모든 행위는 HTTP라는 규칙에 따라 이루어진다.
+
 ### Hypertext란?
 
 하이퍼텍스트는 링크를 통해 다른 문서로 즉시 이동할 수 있는 텍스트를 의미한다. 우리가 클릭하는 웹사이트의 파란색 링크들이 바로 하이퍼텍스트의 가장 흔한 예시이다.
+
 ### HTTP의 기본 동작 원리: Request & Response
 
 HTTP는 Client-Server 모델을 기반으로 작동한다.
 - Client: 웹 브라우저(Chrome, Firefox 등)와 같이 서버에 정보를 요청하는 주체이다.
 - Server: 클라이언트의 요청을 받아 필요한 데이터를 제공하는 주체이다.
 이 모델에서 모든 통신은 Client의 Request로 시작되고, 서버의 Response로 끝난다.
+
 ### HTTP의 특징
 
 - 비연결성(Connectionless): 각 요청과 응답은 서로 독립적이며, 이전 요청이나 다음 요청의 상태를 기억하지 않는다.
@@ -28,6 +31,7 @@ HTTP는 Client-Server 모델을 기반으로 작동한다.
   - 단점: 매번 새로운 요청을 보낼 때 마다 로그인 정보와 같은 상태를 다시 보내야 하는 불편함이 있다. 이 단점을 보완하기 위해 Cookie나 Session 같은 기술이 사용된다.
 - 무상태성(Stateless): 비연결성과 비슷한 개념으로, 서버는 클라이언트의 상태를 저장하지 않는다. 서버는 그저 요청에 따라 응답을 보낼 뿐이다.
 - 메시지 기반(Message-Based): HTTP는 요청과 응답 메세지의 형식(Header & Body)이 정해져 있어 통신이 명확하고 이해하기 쉽다.
+
 ### HTTP 메세지의 구조
 
 HTTP Message는 크게 Request Message, Response Message로 나뉜다. 두 Message 모두 비슷한 구조를 가진다.
@@ -58,6 +62,7 @@ HTTP Message는 크게 Request Message, Response Message로 나뉜다. 두 Messa
     - Set-Cookie: 클라이언트에게 저장할 쿠키 정보
   - Blank Line: 헤더와 본문을 구분하는 빈 줄
   - Message Body: 클라이언트가 요청한 실제 데이터가 들어있다. (HTML 문서, Image File, JSON Data…)
+
 ### HTTP Request Methods
 
 HTTP Method는 Client가 Server에게 “이 자원에 대해 어떤 작업을 수행하고 싶은지”를 알려주는 역할을 한다.
@@ -68,6 +73,7 @@ HTTP Method는 Client가 Server에게 “이 자원에 대해 어떤 작업을 �
 - PATCH: 서버의 자원 일부만 수정할 때 사용
 - HEAD: GET과 동일하지만, 헤더 정보만 받고 본문은 받지 않음. 링크가 유효한지, 파일 크기가 얼마나 되는지 등을 확인할 때 사용
 - OPTIONS: 서버가 지원하는 메소드의 종류를 확인할 때 사용
+
 ### HTTP Status Code
 
 HTTP Status Code는 Server가 요청을 처리한 결과를 알려주는 중요한 정보이다.
@@ -88,10 +94,12 @@ HTTP Status Code는 Server가 요청을 처리한 결과를 알려주는 중요�
   - 503 Service Unavailable: 서버가 일시적으로 사용 불가능하다.
 
 HTTP는 기본적으로 암호화되지 않은 평문(Plaintext) 통신이다. 중간에 누군가 패킷을 가로채면 내용이 그대로 노출된다. 이를 보완하기 위해 HTTPS가 고안되었다.
+
 ## What is HTTPS?
 
 HTTPS는 Hypertext Transfer Protocol Secure의 약자이다. 이름에서 알 수 있듯이, 기존의 HTTP에 보안 기능이 추가된 버전이다.
 HTTPS의 핵심은 SSL(Secure Sockets Layer) 또는, TLS(Transport Layer Security) 라는 암호화 프로토콜을 사용하여 웹 통신을 안전하게 보호하는 것입니다. 즉, HTTPS는 HTTP 메세지를 암호화하는 암호화 통신 계층을 추가하여 해커가 중간에서 데이터를 가로채거나 위조하는 것을 막아준다.
+
 ### SSL/TSL 프로토콜의 역할
 
 HTTPS는 HTTP 요청과 응답을 그대로 보내는 대신, 전송 계층(Transport Layer)에서 데이터를 암호화 한다. 이 역할을 담당하는 것이 바로 SSL 또는 그 후속 버전인 TLS이다.
@@ -99,6 +107,7 @@ SSL/TLS 프로토콜은 다음과 같은 세 가지 주요 기능을 제공하�
 1. 데이터 암호화 (Encryption): Client와 Server가 주고받는 모든 데이터를 암호화하여 제3자가 내용을 훔쳐볼 수 없도록 만든다.
 2. 데이터 무결성 (Integrity): 데이터가 전송 도중에 위조되거나 변조되지 않았음을 보장한다.
 3. 클라이언트 및 서버 인증 (Authentication): 통신하는 상대방이 위장된 서버나 클라이언트가 아님을 보장한다. 특히, 서버의 신원을 보증하는 데 사용된다.
+
 ### HTTPS의 작동 과정
 
 HTTPS 통신은 복잡한 단계를 거친다. 이 과정을 HandShake라고 부르며, 마치 비밀번호와 열쇠를 주고받는 과정과 유사하다.

@@ -1,7 +1,7 @@
 ---
 title: "What is Packet?"
 date: "2025-09-26 12:59:08"
-last_modified_at: "2025-09-26 12:59:08"
+last_modified_at: "2025-09-26 22:34:09"
 categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
 author: "hothyun"
