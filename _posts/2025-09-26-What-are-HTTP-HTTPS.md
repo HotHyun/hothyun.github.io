@@ -1,14 +1,14 @@
 ---
 title: "What are HTTP & HTTPS"
 date: "2025-09-26 12:59:08"
-last_modified_at: "2025-09-26 12:59:08"
+last_modified_at: "2025-09-26 13:04:12"
 categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Internet/What are HTTP & HTTPS.md"
 ---
 
-## What is HTTP?************
+## What is HTTP?
 
 HTTP는 Hypertext Transfer Protocol의 약자로, 웹에서 데이터를 주고받는 데 사용되는 가장 기본적인 애플리케이션 계층 프로토콜이다.
 간단히 말해, HTTP는 웹 브라우저와 웹 서버가 서로 대화하는 규칙이다. 우리가 웹사이트에 접속하거나, 동영상을 보거나, 사진을 다운로드 하는 모든 행위는 HTTP라는 규칙에 따라 이루어진다.
