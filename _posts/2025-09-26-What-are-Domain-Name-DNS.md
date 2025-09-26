@@ -1,6 +1,6 @@
 ---
 title: "What are Domain Name & DNS"
-date: "2025-09-26 12:59:08"
+date: "2025-09-26 13:04:08"
 last_modified_at: "2025-09-26 22:34:09"
 categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
