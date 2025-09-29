@@ -6,6 +6,9 @@ categories: ["DEV", "Blog"]
 tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
+image: 
+  path: /assets/img/posts/previews/daily/2025-09-29.png
+  alt: Jekyll, Transform your plain text into static websites and blogs.
 ---
 
 블로그를 쓰기로 결심했다. 그런데 막상 블로그를 쓰려니 어떻게 블로그를 써야하나 생각이 들었다. 그래도 개발 블로그를 쓸테니, 내가 예전에 개발을 하면서 참고했던 블로그들을 한번 생각해봤다. Tistory도 많았던 거 같고, velog도 많았던 거 같고, github.io 도메인을 가진 커스텀 블로그와 medium도 꽤나 있었던 것 같다. 어떤 걸 쓰는 게 좋을까 고민을 많이 하다가, 내가 쓰는 환경을 통합했을 때 좋은 효율을 내는 방향을 택하기로 했다.
