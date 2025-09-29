@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-09-29 23:02:48"
+last_modified_at: "2025-09-29 23:09:29"
 categories: ["DEV", "Blog"]
 tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
@@ -10,8 +10,7 @@ canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하�
 
 블로그를 쓰기로 결심했다. 그런데 막상 블로그를 쓰려니 어떻게 블로그를 써야하나 생각이 들었다. 그래도 개발 블로그를 쓸테니, 내가 예전에 개발을 하면서 참고했던 블로그들을 한번 생각해봤다. Tistory도 많았던 거 같고, velog도 많았던 거 같고, github.io 도메인을 가진 커스텀 블로그와 medium도 꽤나 있었던 것 같다. 어떤 걸 쓰는 게 좋을까 고민을 많이 하다가, 내가 쓰는 환경을 통합했을 때 좋은 효율을 내는 방향을 택하기로 했다.
 
-> [!TIP] 차근차근 생각해보자
-> **내가 많이 쓰는 노트 앱은 뭘까?**
+> **내가 많이 쓰는 노트 앱은 뭘까?** {: .prompt-tip }
 
 회사에서 일을 할 때에는 Notion을 참 많이 썼던 거 같은데, 지금은 **Obsidian** 을 훨씬 많이 쓰는 거 같다. 그래서 Obsidian 환경과 통합되어서 블로그를 포스팅할 수 있는 방향으로 블로그를 만들어보자는 결론에 도달하게 되었다.
 
@@ -26,7 +25,7 @@ canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하�
 
 # Jekyll
 
-> [!TIP] Jekyll은 Ruby로 작성된 **정적 사이트 생성기(Static Site Generator, SSG)** 이다.
+> Jekyll은 Ruby로 작성된 **정적 사이트 생성기(Static Site Generator, SSG)** 이다. {: .prompt-info }
 
 Markdown/HTML 같은 콘텐츠와 YAML front matter + Liquid 템플릿을 결합해 정적 HTML 파일을 생성한다고 한다. 이 글을 보고 이게 무슨 말이야? 라는 생각이 들 것이다. 하나하나 차근차근 짚고 넘어가보자.
 
@@ -56,7 +55,7 @@ Jekyll에서는 포스팅 될 문서를 확인할 때, 가장 앞 줄에서부�
 
 ## Static Site Generator(SSG)
 
-이를 설명하기 위해 정적 웹 페이지에 대한 정의가 필요하다.
+이를 설명하기 위해 **정적 웹 페이지** 에 대한 정의가 필요하다.
 
 * *정적 웹 페이지** 는, 웹 서버에 이미 저장된 파일(HTML 파일, 이미지, Javascript 파일 등)을 클라이언트에게 전송하는 웹 페이지다. 사용자는 서버에 저장된 데이터가 변경되지 않는 한, 고정된 웹 페이지를 계속 보게 된다. 즉, 서버는 필요한 파일들을 내어주면 그 이후에는 이 웹 페이지에 더이상 관여를 하지 않는다는 것이다. 따라서, 모든 사용자는 같은 결과의 웹 페이지를 서버에 요청하고 응답 받게 된다.
 
