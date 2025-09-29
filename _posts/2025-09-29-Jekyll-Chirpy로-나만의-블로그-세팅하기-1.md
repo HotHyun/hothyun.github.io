@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-09-29 23:29:20"
+last_modified_at: "2025-09-29 23:35:13"
 categories: ["DEV", "Blog"]
 tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
@@ -86,3 +86,12 @@ Jekyll은 gem 기반 테마를 지원한다. Jekyll 프레임워크 구조를 �
 여기서 gem이 무엇인가 하고 의문점을 가질 수 있는데, gem은 Ruby의 패키지 관리 단위이다. javascript에서는 npm, Python에서는 pip와 같은 패키지 매니저 격이다. 즉, 누군가가 '나 Jekyll로 이런 테마의 Layout을 만들었어!' 하고 gem에다가 올리면, 우리가 이 테마를 쉽게 Jekyll에 입힐 수 있게 남들이 만든 테마를 가져오는 역할을 해주는 것이 gem이라고 생각하면 된다.
 
 Jekyll에 대해서 더 설명할 게 많지만!! 다음 포스트로 넘어가서, 내가 어떤 Jekyll 테마를 골랐고, 어떻게 설정하여 사용했는지를 다루면서 더 설명하도록 하겠다!
+
+# References
+
+- [Jekyll](https://jekyllrb.com/)
+- [Front Matter](https://jekyllrb.com/docs/front-matter/)
+- [Liquid](https://jekyllrb.com/docs/liquid/)
+- [정적 웹 페이지와 동적 웹 페이지](https://velog.io/@dyunge_100/WEB-%EC%A0%95%EC%A0%81-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%99%80-%EB%8F%99%EC%A0%81-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80)
+- [Jekyll Theme](https://jekyllrb.com/docs/themes)
+
