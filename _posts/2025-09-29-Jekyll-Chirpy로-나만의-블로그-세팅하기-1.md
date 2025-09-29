@@ -7,7 +7,7 @@ tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
 image: 
-  path: /assets/img/posts/previews/daily/2025-09-29.png
+  path: /assets/img/posts/previews/DEV/Blog/2025-09-29.png
   alt: Jekyll, Transform your plain text into static websites and blogs.
 ---
 
