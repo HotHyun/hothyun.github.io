@@ -1,15 +1,21 @@
+___
+layout: compress
+___
+
+{% assign favicon_path = "/assets/img/favicons" | relative_url %}
+
 {
   "name": "HotHyun Blog",
   "short_name": "HotHyun Blog",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "{{ favicon_path }}/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "{{ favicon_path }}/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
