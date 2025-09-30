@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-09-30 23:32:15"
+last_modified_at: "2025-09-30 23:37:17"
 categories: ["DEV", "Blog"]
 tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
