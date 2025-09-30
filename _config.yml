@@ -124,8 +124,8 @@ comments:
   giscus:
     repo: HotHyun/hothyun.github.io # <gh-username>/<repo>
     repo_id: R_kgDOP0aOYg
-    category: Announcements
-    category_id: DIC_kwDOP0aOYs4Cv-xo
+    category: General
+    category_id: DIC_kwDOP0aOYs4Cv-xp
     mapping: pathname # optional, default to 'pathname'
     strict: 0 # optional, default to '0'
     input_position: top # optional, default to 'bottom'
