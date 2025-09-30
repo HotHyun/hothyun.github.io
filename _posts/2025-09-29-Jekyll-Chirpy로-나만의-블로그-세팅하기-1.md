@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-09-30 23:10:21"
+last_modified_at: "2025-09-30 23:32:15"
 categories: ["DEV", "Blog"]
 tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
@@ -10,7 +10,7 @@ canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하�
 
 블로그를 쓰기로 결심했다. 그런데 막상 블로그를 쓰려니 어떻게 블로그를 써야하나 생각이 들었다. 그래도 개발 블로그를 쓸테니, 내가 예전에 개발을 하면서 참고했던 블로그들을 한번 생각해봤다. Tistory도 많았던 거 같고, velog도 많았던 거 같고, github.io 도메인을 가진 커스텀 블로그와 medium도 꽤나 있었던 것 같다. 어떤 걸 쓰는 게 좋을까 고민을 많이 하다가, 내가 쓰는 환경을 통합했을 때 좋은 효율을 내는 방향을 택하기로 했다.
 
->
+> 
 {:.prompt-tip}
  **내가 많이 쓰는 노트 앱은 뭘까?**
 
@@ -27,7 +27,7 @@ canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하�
 
 # Jekyll
 
->
+> 
 {:.prompt-info}
  Jekyll은 Ruby로 작성된 **정적 사이트 생성기(Static Site Generator, SSG)** 이다.
 
@@ -35,7 +35,7 @@ Markdown/HTML 같은 콘텐츠와 YAML front matter + Liquid 템플릿을 결합
 
 ## Front Matter
 
-Front Matter는 포스팅 될 문서의 메타데이터를 표기하는 하나의 방식이다. 내가 쓰려고 하는 마크다운 파일 가장 앞에 아래와 같이 써서 메타데이터를 표기한다.
+**Front Matter** 는 포스팅 될 문서의 메타데이터를 표기하는 하나의 방식이다. 내가 쓰려고 하는 마크다운 파일 가장 앞에 아래와 같이 써서 메타데이터를 표기한다.
 
 ```markdown
 - --
