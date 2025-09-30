@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-09-30 23:37:17"
+last_modified_at: "2025-10-01 00:09:31"
 categories: ["DEV", "Blog"]
 tags: ["blog", "jekyll", "ssg"]
 author: "hothyun"
@@ -35,7 +35,7 @@ Markdown/HTML 같은 콘텐츠와 YAML front matter + Liquid 템플릿을 결합
 
 ## Front Matter
 
-**Front Matter** 는 포스팅 될 문서의 메타데이터를 표기하는 하나의 방식이다. 내가 쓰려고 하는 마크다운 파일 가장 앞에 아래와 같이 써서 메타데이터를 표기한다.
+Front Matter는 포스팅 될 문서의 메타데이터를 표기하는 하나의 방식이다. 내가 쓰려고 하는 마크다운 파일 가장 앞에 아래와 같이 써서 메타데이터를 표기한다.
 
 ```markdown
 - --
