@@ -1,17 +1,20 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-10-01 00:13:16"
-categories: ["DEV", "Blog"]
-tags: ["blog", "jekyll", "ssg"]
-author: "hothyun"
+last_modified_at: "2025-10-02 08:48:56"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
+categories: [DEV, Blog]
+tags: [blog, jekyll, SSG]
+author: "hothyun"
+image: "/assets/img/posts/previews/DEV/Blog/2025-09-29.png"
 ---
+
 
 블로그를 쓰기로 결심했다. 그런데 막상 블로그를 쓰려니 어떻게 블로그를 써야하나 생각이 들었다. 그래도 개발 블로그를 쓸테니, 내가 예전에 개발을 하면서 참고했던 블로그들을 한번 생각해봤다. Tistory도 많았던 거 같고, velog도 많았던 거 같고, github.io 도메인을 가진 커스텀 블로그와 medium도 꽤나 있었던 것 같다. 어떤 걸 쓰는 게 좋을까 고민을 많이 하다가, 내가 쓰는 환경을 통합했을 때 좋은 효율을 내는 방향을 택하기로 했다.
 
 > **내가 많이 쓰는 노트 앱은 뭘까?**
 {:.prompt-tip}
+
 
 회사에서 일을 할 때에는 Notion을 참 많이 썼던 거 같은데, 지금은 **Obsidian** 을 훨씬 많이 쓰는 거 같다. 그래서 Obsidian 환경과 통합되어서 블로그를 포스팅할 수 있는 방향으로 블로그를 만들어보자는 결론에 도달하게 되었다.
 
@@ -24,10 +27,13 @@ canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하�
 
 그렇게 검색을 하다보니, github에 Jekyll이라고 치고 theme를 골라서 블로그를 운영해보라는 글을 발견했다. Jekyll이 무엇인지 몰랐던 나는 이것이 무엇인지 한번 찾아보았다.
 
+![Jekyll Theme을 검색하면 나오는 화면](/HotHyun/images/contents/DEV/Blog/2025-09-29-1.png)
+
 # Jekyll
 
 > Jekyll은 Ruby로 작성된 **정적 사이트 생성기(Static Site Generator, SSG)** 이다.
 {:.prompt-info}
+
 
 Markdown/HTML 같은 콘텐츠와 YAML front matter + Liquid 템플릿을 결합해 정적 HTML 파일을 생성한다고 한다. 이 글을 보고 이게 무슨 말이야? 라는 생각이 들 것이다. 하나하나 차근차근 짚고 넘어가보자.
 
@@ -36,7 +42,7 @@ Markdown/HTML 같은 콘텐츠와 YAML front matter + Liquid 템플릿을 결합
 **Front Matter**는 포스팅 될 문서의 메타데이터를 표기하는 하나의 방식이다. 내가 쓰려고 하는 마크다운 파일 가장 앞에 아래와 같이 써서 메타데이터를 표기한다.
 
 ```markdown
-- --
+---
 title: 제목입니다.
 description: 설명입니다.
 image:
@@ -44,7 +50,7 @@ image:
   alt: image alt
 ...
 
-- --
+---
 ```
 
 Jekyll에서는 포스팅 될 문서를 확인할 때, 가장 앞 줄에서부터 Front Matter가 있는지를 찾고, 이를 이용하여 포스팅될 때 사용될 제목, 설명, preview 이미지, 목차의 유무 등을 판단한다. 즉, 가장 큰 초기 설정 값이라고 생각하면 된다!
