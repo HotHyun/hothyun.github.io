@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-10-02 10:50:35"
+last_modified_at: "2025-10-02 10:55:31"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, SSG]
@@ -25,9 +25,9 @@ image: "/assets/img/posts/previews/DEV/Blog/2025-09-29.png"
 
 그래서 내가 내린 최종 결론은, Tistory, Velog, Medium 등의 플랫폼을 쓰지 않고, 내가 직접 개발하여 커스텀 블로그를 만들고, Obsidian에서 쓴 글을 내 블로그에 바로 반영할 수 있게하는 것이었다. 즉, 직접 코드를 짜서 블로그를 만들겠다는 말이다. 하지만, 코드를 일일이 내가 다 짜게 되면 시간이 너무 오래 걸린다. 블로그라는게, 결국은 글을 쓰는 게 주 목적이 되어야하는데, 블로그를 만드는 데에 시간을 너무 오래 들여버리면 본래의 목적을 이루기가 너무 힘들게 된다. 따라서, 나는 잘 만들어진 블로그 테마들을 찾아보고 마음에 드는 게 있으면 커스텀하기로 결정했다.
 
-![Jekyll Theme을 검색하면 나오는 화면](/assets/img/posts/contents/DEV/Blog/2025-09-29-1.png)
-
 그렇게 검색을 하다보니, github에 Jekyll이라고 치고 theme를 골라서 블로그를 운영해보라는 글을 발견했다. Jekyll이 무엇인지 몰랐던 나는 이것이 무엇인지 한번 찾아보았다.
+
+![Jekyll Theme을 검색하면 나오는 화면](/assets/img/posts/contents/DEV/Blog/2025-09-29-1.png)
 
 # Jekyll
 
