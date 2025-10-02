@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-10-02 09:59:15"
+last_modified_at: "2025-10-02 10:38:10"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, SSG]
@@ -27,7 +27,7 @@ image: "/assets/img/posts/previews/DEV/Blog/2025-09-29.png"
 
 그렇게 검색을 하다보니, github에 Jekyll이라고 치고 theme를 골라서 블로그를 운영해보라는 글을 발견했다. Jekyll이 무엇인지 몰랐던 나는 이것이 무엇인지 한번 찾아보았다.
 
-![Jekyll Theme을 검색하면 나오는 화면](/assets/img/posts/contents/DEV/Blog/2025-09-29-1.png)
+![Jekyll Theme을 검색하면 나오는 화면](/assets/img/posts/contents//2025-09-29-1.png)
 
 # Jekyll
 
