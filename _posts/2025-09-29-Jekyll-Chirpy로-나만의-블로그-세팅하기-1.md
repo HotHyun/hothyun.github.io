@@ -1,12 +1,12 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
-last_modified_at: "2025-10-02 11:00:12"
+last_modified_at: "2025-10-02 11:24:54"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, SSG]
 author: "hothyun"
-image: "/assets/img/posts/previews/DEV/Blog/2025-09-29.png"
+image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.png"
 ---
 
 
