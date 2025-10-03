@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (2)"
 date: "2025-10-02 12:00:00"
-last_modified_at: "2025-10-03 22:49:46"
+last_modified_at: "2025-10-03 22:51:27"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (2).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
@@ -55,3 +55,5 @@ $ bundle exec jekyll serve
 # References
 
 - [Getting Started](https://chirpy.cotes.page/posts/getting-started/)
+- [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/)
+- [Git Installation Guide](https://git-scm.com/)
