@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (2)"
 date: "2025-10-02 12:00:00"
-last_modified_at: "2025-10-03 22:53:28"
+last_modified_at: "2025-10-03 22:55:41"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (2).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
@@ -27,7 +27,7 @@ image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.png"
 1. 먼저, starter 코드가 있는 [github 링크](https://github.com/cotes2020/chirpy-starter) 로 들어간다.
 2. 아래 사진 우측 상단에 있는 **Use Template** 버튼을 누른 뒤, **Create a new repository** 를 클릭한다.
 
-   ![Use Template 설명 사진](images/2025-10-03-1.png)
+   ![Use Template 설명 사진](/assets/img/posts/contents/DEV/Blog/2025-10-03-1.png)
 
 3. Repository의 이름을 설정해야하는데, 공식 문서 상에는 **{username}.github.io** 로 설정하라고 한다.
 
