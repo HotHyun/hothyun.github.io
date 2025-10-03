@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (2)"
 date: "2025-10-02 12:00:00"
-last_modified_at: "2025-10-03 22:55:41"
+last_modified_at: "2025-10-03 22:58:58"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (2).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
@@ -44,7 +44,7 @@ image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.png"
 
 일단 아무런 세팅도 하지 않은 채, 빌드가 잘 되고 빌드 파일을 잘 조회할 수 있는지를 확인하기 위해 아래의 커맨드를 실행시켜보자. 아래의 커맨드는 현재 Jekyll Chirpy를 빌드하고 빌드된 파일 기반의 로컬 서버를 실행시키는 커맨드이다.
 
-```Bash
+```bash
 $ bundle exec jekyll serve
 ```
 
