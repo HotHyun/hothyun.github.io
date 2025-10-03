@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (2)"
 date: "2025-10-02 12:00:00"
-last_modified_at: "2025-10-03 22:51:27"
+last_modified_at: "2025-10-03 22:53:28"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (2).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
@@ -40,11 +40,11 @@ image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.png"
 - [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/)
 - [Git Installation Guide](https://git-scm.com/)
 
-필요한 도구들이 설치되었다면, 가장 먼저 코드를 가져와보자. 내가 코드를 가져오려고 하는 경로에 접근하여 git clone https://github.com/{username}/{reponame}.git 을 통해 코드를 가져온다. 그리고, VS Code를 사용하는 사람이라면 VS Code로 해당 폴더를 열고, 터미널로 계속하실 분이라면 cd 커맨드를 이용하여 복제한 코드의 경로로 이동한다.
+필요한 도구들이 설치되었다면, 가장 먼저 코드를 가져와보자. 내가 코드를 가져오려고 하는 경로에 접근하여 `git clone https://github.com/{username}/{reponame}.git` 을 통해 코드를 가져온다. 그리고, VS Code를 사용하는 사람이라면 VS Code로 해당 폴더를 열고, 터미널로 계속하실 분이라면 cd 커맨드를 이용하여 복제한 코드의 경로로 이동한다.
 
 일단 아무런 세팅도 하지 않은 채, 빌드가 잘 되고 빌드 파일을 잘 조회할 수 있는지를 확인하기 위해 아래의 커맨드를 실행시켜보자. 아래의 커맨드는 현재 Jekyll Chirpy를 빌드하고 빌드된 파일 기반의 로컬 서버를 실행시키는 커맨드이다.
 
-```Terminal
+```Bash
 $ bundle exec jekyll serve
 ```
 
