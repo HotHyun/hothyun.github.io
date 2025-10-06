@@ -1,11 +1,11 @@
 ---
-title: "\"What are Hosting & Browser?\""
-date: "\"2025-10-06 12:00:00\""
-last_modified_at: "2025-10-06 15:22:42"
+title: "What are Hosting & Browser?"
+date: "2025-10-06 12:00:00"
+last_modified_at: "2025-10-06 15:24:47"
 canonical_id: "obsidian:DEV/Internet/What  are Hosting & Browser?.md"
-categories: ["DEV", "Internet"]
-tags: ["frontend", "network"]
-author: "\"hothyun\""
+categories: [DEV, Internet]
+tags: [frontend, network]
+author: "hothyun"
 ---
 
 
