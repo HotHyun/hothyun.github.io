@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> 저의 portfolio 및 소개는 [Portfolio Site](https://hothyun-portfolio.vercel.app) 에 있습니다.
+> 저의 portfolio 및 소개는 [Portfolio Site](https://portfolio.hothyun.com) 에 있습니다.
 {: .prompt-tip }
 
 # 안녕하세요! HotHyun의 Blog에 오신 것을 환영합니다!
