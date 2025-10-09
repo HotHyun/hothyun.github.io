@@ -1,7 +1,7 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (3)"
 date: "2025-10-09 12:00:00"
-last_modified_at: "2025-10-09 15:09:04"
+last_modified_at: "2025-10-09 15:13:16"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (3).md"
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
@@ -120,7 +120,7 @@ avatar: ./assets/img/profileImage.jpg
 social_preview_image: ./assets/img/ogImage.png
 ```
 
-### TOC
+### Table of Contents
 
 TOC는 Table of Contents의 약자로, 포스팅된 글을 보면 우측에 목차가 나와있을 것이다. 이 기능을 추가하냐 마냐를 결정하는 것이다. 기본은 true 이고, 만약 포스팅 마다 다르게 하고 싶다면, 포스팅될 Markdown의 Front Matter에 `toc: false`를 해주면 되겠다. 필자는 모든 글에 다 보이게 하고 싶어서 `_config.yml` 파일에 `toc: true`로 설정해두었다.
 
