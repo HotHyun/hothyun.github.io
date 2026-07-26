@@ -1,10 +1,10 @@
 ---
-title: "\"[Dreamhack] ssp_001\""
+title: "[Dreamhack] ssp_001"
 date: "2026-07-26T10:00:00"
-last_modified_at: "2026-07-27 00:09:24"
+last_modified_at: "2026-07-27 00:17:32"
 canonical_id: "obsidian:hack/pwn/[Dreamhack] ssp_001.md"
-categories: []
-tags: []
+categories: [Hack, Pwn]
+tags: [canary, BOF]
 author: "hothyun"
 image: "/assets/img/posts/preview/hack/pwn/pwn1.png"
 ---
@@ -53,7 +53,7 @@ Stripped:   No
 
 이제 코드를 분석할 차례다. 문제에서 내어준 코드가 있으니, 이를 분석해서 어디에 취약점이 있는지를 찾아보자.
 
-```C
+```c
 void get_shell() {
     system("/bin/sh");
 }
@@ -65,7 +65,7 @@ void get_shell() {
 
 이제 `main` 이다.
 
-```C
+```c
 case 'F':
     printf("box input : ");
     read(0, box, sizeof(box));
@@ -74,7 +74,7 @@ case 'F':
 
 `case F`는 box 배열에 값을 box 배열의 길이만큼 채워넣을 수 있는 것 같다.
 
-```C
+```c
 case 'P':
     printf("Element index : ");
     scanf("%d", &idx); // 값 검증을 하지 않는다. 우리가 원하는 위치의 값을 볼 수 있다.
@@ -84,7 +84,7 @@ case 'P':
 
 `case P`는 Element index를 scanf로 받고, 해당 위치의 값을 출력할 수 있는 것 같다. 그런데 여기서 취약한 점이 하나 있다. 바로, index의 값을 **검증을 하지 않는다** 는 것이다. 따라서, 우리는 box 배열 외부의 값에도 접근할 수 있는 길이 생겼다.
 
-```C
+```c
 case 'E':
     printf("Name Size : ");
     scanf("%d", &name_len);
@@ -115,7 +115,7 @@ $ gdb ./ssp_001
 
 그리고 disassemble 명령어를 사용해서 어셈블리가 어떻게 되어있는지를 살펴보자.
 
-```assembly
+```text
 0x0804872f <+4>:     sub    esp,0x94
 0x08048735 <+10>:    mov    eax,DWORD PTR [ebp+0xc]
 0x08048738 <+13>:    mov    DWORD PTR [ebp-0x98],eax
@@ -125,7 +125,7 @@ $ gdb ./ssp_001
 
 이 부분은 stack에 0x94 만큼의 메모리를 할당하고, gs:0x14로부터 난수값을 가져와서 ebp-0x8 주소에다가 저장하는 과정이다. 여기가 메모리 영역 할당 및, 카나리 값을 저장하는 어셈블리인 것 같다. 여기서 주목할 점은, ebp-0x4 에다가 카나리를 넣는 게 아니라, ebp-0x8에다가 넣는다. 그래서 카나리는 ebp-8 ~ ebp-5 범위에 있다. 그리고 카나리의 첫 바이트 값은 \x00 이므로, ebp-8 주소 값에 \x00이 들어가있고, 그 뒤에 3바이트가 나란히 카나리 값이 될 것이다.
 
-```assembly
+```text
 0x08048749 <+30>:    lea    edx,[ebp-0x88]
 0x0804874f <+36>:    mov    eax,0x0
 0x08048754 <+41>:    mov    ecx,0x10
@@ -140,7 +140,7 @@ $ gdb ./ssp_001
 
 그리고 ebp-0x88 주소로부터 0x10만큼 초기화하는 어셈블리 및, ebp-0x48로부터 0x10만큼 초기화하는 어셈블리가 있다. 여기서는 name이랑 box 배열을 초기화하는 것으로 보인다.
 
-```assembly
+```text
 0x0804878b <+96>:    call   0x8048672 <initialize>
 0x08048790 <+101>:   call   0x80486f1 <menu>
 0x08048795 <+106>:   push   0x2
@@ -151,7 +151,7 @@ $ gdb ./ssp_001
 
 이 부분을 보니까, initialize를 하고 menu를 출력한 뒤, 차례대로 push를 하는 것이 보인다. i386-32-little 에서는 함수의 인자 값을 전달할 때 뒷 순서대로 차례대로 push를 한다. 그래서 사실상 이 코드는 read(0, select, 2) 코드가 어셈블리로 표현된 것이다. 따라서, 이를 보면 select 변수는 ebp-0x8a 로부터 2바이트(ebp-0x8a ~ ebp-0x89) 에 할당되어 있다고 할 수 있다.
 
-```assembly
+```text
 0x080487d3 <+168>:   push   0x40
 0x080487d5 <+170>:   lea    eax,[ebp-0x88]
 0x080487db <+176>:   push   eax
@@ -161,7 +161,7 @@ $ gdb ./ssp_001
 
 그리고 지금 보는 부분은 두 번째 read가 나온 곳이다. 아까 select에서 첫 번째 read가 나오고, 순차적으로 봤을 때 두 번째 read는 case F에서 나온다. 따라서 지금 ebp-0x88 주소로부터 0x40 받는다고 인자 설정이 되어있으므로 case F에서 받으려는 box배열이  ebp-0x88 부터 0x40 만큼 할당되어있다고 할 수 있다.
 
-```assembly
+```text
 0x08048858 <+301>:   push   eax
 0x08048859 <+302>:   lea    eax,[ebp-0x48]
 0x0804885c <+305>:   push   eax
