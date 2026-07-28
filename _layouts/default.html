@@ -17,6 +17,8 @@ layout: compress
   {% include head.html %}
 
   <body>
+    <a class="skip-to-content" href="#main-content">본문으로 건너뛰기</a>
+
     {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
@@ -24,7 +26,7 @@ layout: compress
         {% include topbar.html lang=lang %}
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <main id="main-content" tabindex="-1" aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -63,7 +65,7 @@ layout: compress
 
       <aside aria-label="Scroll to Top">
         <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
-          <i class="fas fa-angle-up"></i>
+          <i class="fas fa-angle-up" aria-hidden="true"></i>
         </button>
       </aside>
     </div>

@@ -6,6 +6,7 @@ categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Internet/What is IP Address?.md"
+description: "IP 주소의 역할과 IPv4·IPv6, 공인·사설 주소 등 인터넷에서 장치를 식별하는 주소 체계를 정리합니다."
 ---
 
 IP 주소는 인터넷에 연결된 모든 장치(컴퓨터, 스마트폰, 서버, 라우터 등)를 식별하기 위한 고유한 숫자 주소이다. 여기서 IP는 **Internet Protocol(인터넷 규약)** 의 약자이다.

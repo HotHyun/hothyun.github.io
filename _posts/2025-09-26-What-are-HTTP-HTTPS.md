@@ -6,6 +6,7 @@ categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Internet/What are HTTP & HTTPS.md"
+description: "HTTP의 요청·응답 구조와 특징을 살펴보고 HTTPS가 TLS로 통신을 보호하는 원리를 설명합니다."
 ---
 
 ## What is HTTP?

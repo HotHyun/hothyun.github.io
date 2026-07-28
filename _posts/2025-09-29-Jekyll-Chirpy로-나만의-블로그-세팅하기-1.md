@@ -3,6 +3,7 @@ title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (1)"
 date: "2025-09-29 23:02:48"
 last_modified_at: "2025-10-02 11:24:54"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (1).md"
+description: "Obsidian에서 작성한 글을 GitHub Pages 블로그로 발행하기 위한 도구와 구성 방식을 선택합니다."
 categories: [DEV, Blog]
 tags: [blog, jekyll, SSG]
 author: "hothyun"
@@ -100,4 +101,3 @@ Jekyll에 대해서 더 설명할 게 많지만!! 다음 포스트로 넘어가�
 - [Liquid](https://jekyllrb.com/docs/liquid/)
 - [정적 웹 페이지와 동적 웹 페이지](https://velog.io/@dyunge_100/WEB-%EC%A0%95%EC%A0%81-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%99%80-%EB%8F%99%EC%A0%81-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80)
 - [Jekyll Theme](https://jekyllrb.com/docs/themes)
-

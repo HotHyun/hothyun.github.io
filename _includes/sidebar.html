@@ -21,7 +21,7 @@
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
+          <i class="fa-fw fas fa-home" aria-hidden="true"></i>
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
@@ -29,7 +29,7 @@
       {% for tab in site.tabs %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ tab.icon }}"></i>
+            <i class="fa-fw {{ tab.icon }}" aria-hidden="true"></i>
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
             <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
@@ -43,13 +43,13 @@
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
       {%- capture icon_system -%}
-        <i class="fa-solid fa-display" data-theme-mode="system"></i>
+        <i class="fa-solid fa-display" data-theme-mode="system" aria-hidden="true"></i>
       {%- endcapture -%}
       {%- capture icon_light -%}
-        <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+        <i class="fa-regular fa-sun" data-theme-mode="light" aria-hidden="true"></i>
       {%- endcapture -%}
       {%- capture icon_dark -%}
-        <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+        <i class="fa-regular fa-moon" data-theme-mode="dark" aria-hidden="true"></i>
       {%- endcapture -%}
 
       <div class="btn-group dropup">
@@ -135,7 +135,7 @@
             rel="{{ link_types }}"
           {% endunless %}
         >
-          <i class="{{ entry.icon }}"></i>
+          <i class="{{ entry.icon }}" aria-hidden="true"></i>
         </a>
       {% endif %}
     {% endfor %}

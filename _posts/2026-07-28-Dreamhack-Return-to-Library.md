@@ -3,6 +3,7 @@ title: "[Dreamhack] Return to Library"
 date: "2026-07-27T10:00:00"
 last_modified_at: "2026-07-28 00:29:34"
 canonical_id: "obsidian:hack/pwn/[Dreamhack] Return to Library.md"
+description: "Dreamhack Return to Library 문제를 통해 ROP 공격 흐름과 가젯 구성, 스택 정렬 문제를 분석합니다."
 categories: [Hack, Pwn]
 tags: [ROP]
 author: "hothyun"

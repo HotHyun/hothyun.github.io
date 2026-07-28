@@ -6,6 +6,7 @@ import process from 'node:process';
 import sharp from 'sharp';
 
 const CONVERTIBLE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png']);
+const DIMENSION_EXTENSIONS = new Set(['.gif', '.jpg', '.jpeg', '.png', '.webp']);
 const IMAGE_DIRECTORIES = ['preview', 'previews', 'contents'];
 const POST_EXTENSIONS = new Set(['.md', '.markdown', '.html']);
 
@@ -193,6 +194,31 @@ function formatBytes(bytes) {
   return `${(bytes / 1024 / 1024).toFixed(2)} MiB`;
 }
 
+async function writeImageDimensions(root, directories) {
+  const files = (await Promise.all(directories.map(walk)))
+    .flat()
+    .filter((file) => DIMENSION_EXTENSIONS.has(path.extname(file).toLowerCase()))
+    .sort();
+  const dimensions = {};
+
+  for (const file of files) {
+    const metadata = await sharp(file, { animated: true }).metadata();
+    if (!metadata.width || !metadata.height) continue;
+
+    const key = `/${path.relative(root, file).split(path.sep).join('/')}`;
+    dimensions[key] = {
+      width: metadata.width,
+      height: metadata.pageHeight || metadata.height
+    };
+  }
+
+  const dataDirectory = path.join(root, '_data');
+  const output = path.join(dataDirectory, 'image_dimensions.json');
+  await fs.mkdir(dataDirectory, { recursive: true });
+  await fs.writeFile(output, `${JSON.stringify(dimensions, null, 2)}\n`);
+  console.log(`Wrote dimensions for ${Object.keys(dimensions).length} post images.`);
+}
+
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   const directories = await existingDirectories(options.root);
@@ -201,33 +227,34 @@ async function main() {
     CONVERTIBLE_EXTENSIONS.has(path.extname(file).toLowerCase())
   );
 
+  const conversions = [];
   if (convertible.length === 0) {
     console.log('No PNG or JPEG post images require optimization.');
-    return;
-  }
+  } else {
+    await assertNoCollisions(convertible);
 
-  await assertNoCollisions(convertible);
+    for (const source of convertible.sort()) {
+      const result = await convertImage(source, options);
+      conversions.push(result);
+      console.log(
+        `${path.relative(options.root, result.source)} -> ` +
+        `${path.relative(options.root, result.destination)} ` +
+        `(${formatBytes(result.before)} -> ${formatBytes(result.after)})`
+      );
+    }
 
-  const conversions = [];
-  for (const source of convertible.sort()) {
-    const result = await convertImage(source, options);
-    conversions.push(result);
+    const updatedPosts = await updatePostReferences(options.root, conversions);
+    const before = conversions.reduce((total, item) => total + item.before, 0);
+    const after = conversions.reduce((total, item) => total + item.after, 0);
+    const reduction = before === 0 ? 0 : ((before - after) / before) * 100;
+
     console.log(
-      `${path.relative(options.root, result.source)} -> ` +
-      `${path.relative(options.root, result.destination)} ` +
-      `(${formatBytes(result.before)} -> ${formatBytes(result.after)})`
+      `Optimized ${conversions.length} images and updated ${updatedPosts} posts: ` +
+      `${formatBytes(before)} -> ${formatBytes(after)} (${reduction.toFixed(1)}% smaller).`
     );
   }
 
-  const updatedPosts = await updatePostReferences(options.root, conversions);
-  const before = conversions.reduce((total, item) => total + item.before, 0);
-  const after = conversions.reduce((total, item) => total + item.after, 0);
-  const reduction = before === 0 ? 0 : ((before - after) / before) * 100;
-
-  console.log(
-    `Optimized ${conversions.length} images and updated ${updatedPosts} posts: ` +
-    `${formatBytes(before)} -> ${formatBytes(after)} (${reduction.toFixed(1)}% smaller).`
-  );
+  await writeImageDimensions(options.root, directories);
 }
 
 main().catch((error) => {

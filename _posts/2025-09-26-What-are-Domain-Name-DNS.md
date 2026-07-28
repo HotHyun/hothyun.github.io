@@ -6,6 +6,7 @@ categories: ["DEV", "Internet"]
 tags: ["frontend", "network"]
 author: "hothyun"
 canonical_id: "obsidian:DEV/Internet/What are Domain Name & DNS.md"
+description: "도메인 이름의 계층 구조와 DNS가 사람이 읽는 주소를 IP 주소로 변환하는 과정을 설명합니다."
 ---
 
 ## What is Domain Name?

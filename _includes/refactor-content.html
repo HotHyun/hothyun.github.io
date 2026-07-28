@@ -34,9 +34,9 @@
 {% if _content contains '<input type="checkbox"' %}
   {% assign _content = _content
     | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />',
-      '<i class="fas fa-check-circle fa-fw checked"></i>'
+      '<i class="fas fa-check-circle fa-fw checked" aria-hidden="true"></i>'
     | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />',
-      '<i class="far fa-circle fa-fw"></i>'
+      '<i class="far fa-circle fa-fw" aria-hidden="true"></i>'
   %}
 {% endif %}
 
@@ -227,7 +227,7 @@
       {% endif %}
 
       {% capture _label %}
-        <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon }}"></i></span>
+        <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon }}" aria-hidden="true"></i></span>
       {% endcapture %}
 
       {% assign _new_content = _new_content
@@ -236,7 +236,7 @@
         | append: _label
         | append: '<button aria-label="copy" data-title-succeed="'
         | append: site.data.locales[include.lang].post.button.copy_code.succeed
-        | append: '"><i class="far fa-clipboard"></i></button></div>'
+        | append: '"><i class="far fa-clipboard" aria-hidden="true"></i></button></div>'
         | append: '<div class="highlight"><code>'
       %}
     {% endif %}
@@ -267,7 +267,7 @@
       {% assign id = snippet | split: '"' | first %}
       {% assign anchor = '<a href="#'
         | append: id
-        | append: '" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>'
+        | append: '" class="anchor text-muted" aria-label="Link to this section"><i class="fas fa-hashtag" aria-hidden="true"></i></a>'
       %}
 
       {% assign left = snippet | split: mark_end | first %}
