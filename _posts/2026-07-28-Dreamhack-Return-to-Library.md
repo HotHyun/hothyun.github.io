@@ -6,7 +6,7 @@ canonical_id: "obsidian:hack/pwn/[Dreamhack] Return to Library.md"
 categories: [Hack, Pwn]
 tags: [ROP]
 author: "hothyun"
-image: "/assets/img/posts/preview/hack/pwn/pwn1.png"
+image: "/assets/img/posts/preview/hack/pwn/pwn1.webp"
 ---
 
 

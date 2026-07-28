@@ -29,6 +29,19 @@ latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so tha
 
 Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
 
+### Post image optimization
+
+PNG and JPEG files under `assets/img/posts/{preview,previews,contents}` can be
+converted to WebP and their `_posts` references updated with:
+
+```shell
+npm install --no-save --no-package-lock sharp@0.34.3
+node tools/optimize-post-images.mjs
+```
+
+The Obsidian sync workflow runs the same script after copying post images, so
+new and updated images are optimized before they are committed to this repo.
+
 ## Contributing
 
 This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.

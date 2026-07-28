@@ -6,7 +6,7 @@ canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하�
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
 author: "hothyun"
-image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.png"
+image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.webp"
 ---
 
 
@@ -74,7 +74,7 @@ social:
 
 Google Search Console에 들어가니, 크게 2가지의 선택지가 있었다.
 
-![google search console](/assets/img/posts/contents/DEV/Blog/2025-10-09-1.png)
+![google search console](/assets/img/posts/contents/DEV/Blog/2025-10-09-1.webp)
 
 도메인으로 속성을 추가하는 방법과, URL 접두어로 추가하는 방법이었다. 필자는 도메인으로 속성을 추가하는 방법을 택했다. URL 접두어로 추가하는 방법에 대해서 잘 포스팅해둔 블로그 글이 있으므로 이를 첨부하겠다. [URL 접두어로 추가하기](https://jaehee-kim24.github.io/posts/github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EA%B2%80%EC%83%89%EB%85%B8%EC%B6%9C%ED%95%98%EA%B8%B0/)
 
@@ -138,11 +138,11 @@ disqus는 github만을 이용하는 게 아니기 때문에 private repo 환경�
 
 giscus를 쓰려면 discussion 기능이 활성화되어야 한다. 따라서, 내 블로그 레포에 들어가서 discussion 기능을 활성화시켜주고, [giscus 페이지](https://giscus.app/ko)를 들어가보자.
 
-![giscus-guide-1](/assets/img/posts/contents/DEV/Blog/2025-10-09-2.png)
+![giscus-guide-1](/assets/img/posts/contents/DEV/Blog/2025-10-09-2.webp)
 
 자신의 {githubname}/{reponame} 을 입력한다.
 
-![giscus-guide-2](/assets/img/posts/contents/DEV/Blog/2025-10-09-3.png)
+![giscus-guide-2](/assets/img/posts/contents/DEV/Blog/2025-10-09-3.webp)
 
 discussion category를 결정한다. Announcement를 설정해도 되고 General을 설정해도 되고 본인 마음이다. 필자의 경우 General로 설정했다.
 

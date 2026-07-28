@@ -6,7 +6,7 @@ canonical_id: "obsidian:hack/pwn/[Dreamhack] ssp_001.md"
 categories: [Hack, Pwn]
 tags: [canary, BOF]
 author: "hothyun"
-image: "/assets/img/posts/preview/hack/pwn/pwn1.png"
+image: "/assets/img/posts/preview/hack/pwn/pwn1.webp"
 ---
 
 
