@@ -1,12 +1,12 @@
 ---
 title: "What are Hosting & Browser?"
 date: "2025-10-06 12:00:00"
-last_modified_at: "2025-10-06 15:24:47"
+last_modified_at: "2026-07-28 10:38:25"
 canonical_id: "obsidian:DEV/Internet/What  are Hosting & Browser?.md"
-description: "웹 호스팅이 사이트를 제공하는 방식과 브라우저가 웹 콘텐츠를 요청하고 화면에 렌더링하는 과정을 설명합니다."
 categories: [DEV, Internet]
 tags: [frontend, network]
 author: "hothyun"
+description: "웹 호스팅이 사이트를 제공하는 방식과 브라우저가 웹 콘텐츠를 요청하고 화면에 렌더링하는 과정을 설명합니다."
 ---
 
 

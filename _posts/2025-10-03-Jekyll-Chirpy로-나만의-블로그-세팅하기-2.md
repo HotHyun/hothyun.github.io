@@ -1,12 +1,12 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (2)"
 date: "2025-10-02 12:00:00"
-last_modified_at: "2025-10-03 22:58:58"
+last_modified_at: "2026-07-28 10:38:25"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (2).md"
-description: "Jekyll Chirpy 테마를 선택한 이유와 GitHub Pages에 블로그를 생성하고 배포하는 과정을 설명합니다."
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
 author: "hothyun"
+description: "Jekyll Chirpy 테마를 선택한 이유와 GitHub Pages에 블로그를 생성하고 배포하는 과정을 설명합니다."
 image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.webp"
 ---
 

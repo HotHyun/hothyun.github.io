@@ -1,12 +1,12 @@
 ---
 title: "[Dreamhack] ssp_001"
 date: "2026-07-26T10:00:00"
-last_modified_at: "2026-07-27 00:17:32"
+last_modified_at: "2026-07-28 10:38:25"
 canonical_id: "obsidian:hack/pwn/[Dreamhack] ssp_001.md"
-description: "Dreamhack ssp_001 문제를 분석하며 스택 카나리 유출과 버퍼 오버플로를 이용한 익스플로잇 과정을 정리합니다."
 categories: [Hack, Pwn]
 tags: [canary, BOF]
 author: "hothyun"
+description: "Dreamhack ssp_001 문제를 분석하며 스택 카나리 유출과 버퍼 오버플로를 이용한 익스플로잇 과정을 정리합니다."
 image: "/assets/img/posts/preview/hack/pwn/pwn1.webp"
 ---
 

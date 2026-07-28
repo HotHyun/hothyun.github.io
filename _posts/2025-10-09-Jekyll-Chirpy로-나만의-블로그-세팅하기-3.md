@@ -1,12 +1,12 @@
 ---
 title: "Jekyll Chirpy로 나만의 블로그 세팅하기 (3)"
 date: "2025-10-09 12:00:00"
-last_modified_at: "2025-10-09 15:13:16"
+last_modified_at: "2026-07-28 10:38:25"
 canonical_id: "obsidian:DEV/Blog/Jekyll Chirpy로 나만의 블로그 세팅하기 (3).md"
-description: "Jekyll Chirpy의 사이트 정보와 분석 도구, 댓글, 스타일을 개인 블로그에 맞게 설정합니다."
 categories: [DEV, Blog]
 tags: [blog, jekyll, chirpy]
 author: "hothyun"
+description: "Jekyll Chirpy의 사이트 정보와 분석 도구, 댓글, 스타일을 개인 블로그에 맞게 설정합니다."
 image: "/assets/img/posts/preview/DEV/Blog/2025-09-29.webp"
 ---
 

@@ -1,13 +1,14 @@
 ---
 title: "What is Packet?"
 date: "2025-09-26 13:01:08"
-last_modified_at: "2025-09-26 22:34:09"
-categories: ["DEV", "Internet"]
-tags: ["frontend", "network"]
-author: "hothyun"
+last_modified_at: "2026-07-28 10:38:25"
 canonical_id: "obsidian:DEV/Internet/What is Packet?.md"
+categories: [DEV, Internet]
+tags: [frontend, network]
+author: "hothyun"
 description: "인터넷 데이터의 기본 전송 단위인 패킷의 헤더와 페이로드 구조, 분할과 재조립 과정을 설명합니다."
 ---
+
 
 가장 간단하게 말해, 패킷은 인터넷에서 데이터를 전송하기 위해 **작게 나눈 데이터 덩어리** 이다.
 인터넷은 마치 고속도로와 같아서, **모든 데이터가 동시에 한 길로만 갈 수는 없다**. 데이터를 작게 나누어 여러 길로 분산시켜 보내야 효율적으로 전송할 수 있다. 이것이 바로 패킷의 핵심 목적이다.

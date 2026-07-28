@@ -1,12 +1,12 @@
 ---
 title: "HTML - HTML5 & Basic Tags"
 date: "2025-10-10T15:29:00"
-last_modified_at: "2025-10-10 15:34:45"
+last_modified_at: "2026-07-28 10:38:25"
 canonical_id: "obsidian:DEV/HTML/HTML - HTML5 & Basic Tags.md"
-description: "HTML과 HTML5의 역할을 살펴보고 웹 문서를 구성하는 기본 태그와 시맨틱 요소의 사용법을 정리합니다."
 categories: []
 tags: []
 author: "hothyun"
+description: "HTML과 HTML5의 역할을 살펴보고 웹 문서를 구성하는 기본 태그와 시맨틱 요소의 사용법을 정리합니다."
 image: "/assets/img/posts/preview/DEV/HTML/2025-10-10.webp"
 ---
 
