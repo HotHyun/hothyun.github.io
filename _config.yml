@@ -20,10 +20,8 @@ sidebar_title: HotHyun
 
 tagline: Software Engineer # it will display as the subtitle
 
-subdescription: A blog containing software development records
-
 description: >- # used by seo meta and the atom feed
-  Software Engineer로써 제품을 개발하면서 습득한 지식을 공유하고, Developer Roadmap에 공부하는 CS 지식을 공유합니다.
+  소프트웨어 개발 과정에서 배운 기술과 CS 지식을 기록하고 공유하는 HotHyun의 개발 블로그입니다.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -62,12 +60,12 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-Y0Q2Q5CREJ # fill in your Google Analytics ID
+    id: # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: "20132d58-0a6f-46c0-81d0-ffde482fd301" # fill in your Umami ID
+    domain: "https://umami.hothyun.com" # fill in your Umami domain
   matomo:
     id: # fill in your Matomo ID
     domain: # fill in your Matomo domain
@@ -101,11 +99,11 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: ./assets/img/profileImage.jpg
+avatar: /assets/img/profileImage.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: ./assets/img/ogImage.png # string, local or CORS resources
+social_preview_image: /assets/img/ogImage.png # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
