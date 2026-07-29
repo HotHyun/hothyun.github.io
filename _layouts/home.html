@@ -61,7 +61,7 @@ refactor: true
           {% capture src %}{% include media-url.html src=src subpath=post.media_subpath %}{% endcapture %}
           {% assign dimensions = site.data.image_dimensions[image_path] %}
 
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+          {% assign alt = post.image.alt | default: post.title | xml_escape %}
 
           {% assign lqip = null %}
 
@@ -70,7 +70,7 @@ refactor: true
             {% assign lqip = 'lqip="' | append: lqip_url | append: '"' %}
           {% endif %}
 
-          <div class="col-md-5">
+          <div class="col-md-5 post-preview-media">
             <img
               src="{{ src }}"
               alt="{{ alt }}"
